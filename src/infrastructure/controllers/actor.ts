@@ -11,7 +11,9 @@ export class ActorGraphQLController implements IActorController{
   private jwt: Jwt
   constructor(
     private service: ActorService
-  ){}
+  ){
+    this.jwt = new Jwt()
+  }
 
   async create(_, { input }, req):Promise<Actor>{
     await this.jwt.validToken(req.token)

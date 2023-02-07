@@ -35,6 +35,8 @@ Here is API documentation for movie library
 | :--------    | :------- | :-------------------------------- |
 | `Query`      | `getMovies` | **No** |
 | `Query`      | `getMovieById` | **No** |
-| `Mutation`      | `createActor` | **Yes** |
+| `Mutation`      | `createMovie` | **Yes** |
+| `Mutation`      | `updateMovie` | **Yes** |
+| `Mutation`      | `deleteMovie` | **Yes** |
 
 
