@@ -40,3 +40,10 @@ Here is API documentation for movie library
 | `Mutation`      | `deleteMovie` | **Yes** |
 
 
+
+Header Example
+`{
+  "Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJlbWFpbCI6InJhbmdnYWJ1ZGlwYW5nZXN0dUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InJhbmdnYWJwMTIifSwiaWF0IjoxNjc1NzYwODE5LCJleHAiOjE2NzU3NjQ0MTl9.XNkQApELb05KfmuQYuJzwVDPXwtHrjJz8GBWpMJqxgg"
+}`
+
+
