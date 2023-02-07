@@ -22,6 +22,10 @@ export async function AppServer(){
   
   await server.start();
 
+  app.get('/', (req, res) =>{
+    res.send('Server is running properly')
+  })
+  
   app.use(
     '/graphql',
     cors<cors.CorsRequest>(),
@@ -35,6 +39,8 @@ export async function AppServer(){
   app.get('/graphiql', (req, res) =>{
     res.sendFile(path.resolve(__dirname, '../../client/build', 'index.html'))
   })
+
+  
 
   return httpServer
 }
