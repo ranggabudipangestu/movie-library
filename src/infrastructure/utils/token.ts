@@ -23,9 +23,12 @@ export default class Jwt implements IJwt {
   }
 
   async validToken(token) {
+    
     if (!token) throw new Error('UNAUTHORIZED')
     let verifiedJToken:any
     try {
+      const arrToken = token.split(" ")
+      token = arrToken.length === 1 ? arrToken[0] : arrToken[1]
       verifiedJToken = new Jwt().decode(token)
       
     } catch (err) {
@@ -36,5 +39,7 @@ export default class Jwt implements IJwt {
       throw new Error("TOKEN_EXPIRED")
     }
   }
+
+  
 }
 
